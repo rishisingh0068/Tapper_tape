@@ -6,8 +6,8 @@ import App from './App.jsx'
 import Footer from './Components/Footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
     <Outlet />
+    <App />
     <Footer />
   </StrictMode>,
 )

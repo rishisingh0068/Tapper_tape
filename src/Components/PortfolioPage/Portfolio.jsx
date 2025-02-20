@@ -37,7 +37,7 @@ const Portfolio = () => {
   const section = sections[activeTab];
 
   return (
-    <div className="max-w-7xl mx-auto py-8 px-6">
+    <div className="max-w-7xl mx-auto py-8 px-6 ">
       {/* Portfolio Tabs */}
       <div className="flex space-x-4 mb-8 overflow-x-auto pb-2 p-5">
         {tabs.map((tab) => (
@@ -58,7 +58,7 @@ const Portfolio = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-gray-800 rounded-lg p-6 md:p-8 mb-5"
+        className="bg-gray-800 rounded-lg p-10 md:p-8 mt-30 "
       >
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
           <div>

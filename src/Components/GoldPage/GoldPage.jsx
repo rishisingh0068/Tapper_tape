@@ -1,10 +1,19 @@
+import PerformanceGraph from "./GoldGraph";
+import GoldInvestment from "./GoldInvestment";
+import DigitalGoldInvestment from "./DigitalGoldInvestment";
+import DigitalGoldInfo from "./DigitalGoldInfo";
+import FAQSection from "./FAQGoldSection";
+
 export default function DigitalGold() {
+  
   return (
-    <section className="bg-gray-900 text-white min-h-screen flex items-center justify-center px-6 py-12">
+    <div className="bg-white text-white min-h-screen ">
+    {/* Hero Section */}
+    <section className="bg-gray-900 text-white  flex items-center justify-center px-6 py-12 rounded-b-4xl">
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
-          <p className="text-blue-400 font-semibold">Introducing <span className="text-blue-500">Digital Gold</span></p>
+          <p className="text-blue-400 font-semibold">Introducing <span className="text-blue-600">Digital Gold</span></p>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">
             Tackle market volatility with <br /> <span className="text-yellow-400">Digital Gold</span>
           </h2>
@@ -25,16 +34,28 @@ export default function DigitalGold() {
         </div>
 
         {/* Right Section - Image */}
-        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <div className="md:w-1/2 mt-5 md:mt-0 flex justify-center h-100 w">
           <img
-            src="/gold.jpg"
+            src="/gold2.png"
             alt="Digital Gold"
             className="max-w-xs md:max-w-md "
           />
         </div>
       </div>
     </section>
-
-
+    <section className="p-10">
+    {/* Graph, Calculator imort from Graph Component*/}
+    < PerformanceGraph/>
+    {/* GoldInvestment */}
+    <GoldInvestment/>
+    {/* DigitalGoldInvestment */}
+    <DigitalGoldInvestment/>
+    {/* Learn more Digital gold Investment */}
+    <DigitalGoldInfo/>
+    {/* Gold Investment Question */}
+    <FAQSection/>
+    </section>
+    </div>
   );
 }
+
