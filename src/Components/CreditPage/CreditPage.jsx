@@ -1,9 +1,13 @@
 import { FaRupeeSign, FaUsers } from "react-icons/fa";
 import { FiZap } from "react-icons/fi";
+import  MutualFunds from "./MutualFunds";
+import VideoContent from "./VideoContent";
+import Qna from "./Qna";
 
 export default function MutualFundLoan() {
     return (
-        <div className="bg-gray-900 min-h-screen text-white py-10 px-6 md:px-16 lg:px-24">
+        <div className="bg-white">
+        <div className="bg-gray-900 min-h-screen text-white py-10 px-6 md:px-16 lg:px-24 rounded-b-4xl">
             {/* Main Section */}
             <div className="text-center mb-10">
                 <h1 className="text-3xl md:text-5xl font-bold">
@@ -52,6 +56,14 @@ export default function MutualFundLoan() {
                 <p>Consumer Loan 14-28%</p>
                 <p>Credit Card 24-36%</p>
             </div>
+
+            
+        </div>
+        <section className="p-10">
+        < MutualFunds/>
+        <VideoContent />
+        <Qna/>
+        </section>
         </div>
     );
 }
