@@ -7,7 +7,7 @@ import Portfolio from './Components/PortfolioPage/Portfolio';
 import DigitalGold from './Components/GoldPage/GoldPage';
 import ScreenerPage from './Components/ScreenerPage/ScreenerPage';
 import CreditPage from './Components/CreditPage/CreditPage';
-import SignInPage from './Components/SignInPage/SignInPage';
+import SignInPage from './Components/SignInPage/signInPage';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');

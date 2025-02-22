@@ -1,9 +1,10 @@
 import React from 'react'
+import SignIn from './SignIn'
 
 function signInPage() {
   return (
     <div>
-      <h1>This is sign in GoldPage</h1>
+      <SignIn/>
     </div>
   )
 }

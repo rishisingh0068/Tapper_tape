@@ -75,26 +75,13 @@ const VideoCard = ({ video }) => {
     );
 };
 
-// Learn More Card Component
-const LearnMoreCard = ({ item }) => (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden ">
-        <img src={item.image} alt={item.title} className="w-full h-40 object-cover" />
-        <div className="p-4">
-            <h3 className="font-semibold text-gray-800">{item.title}</h3>
-            <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 text-sm mt-2 block hover:underline">
-                Read more
-            </a>
-        </div>
-    </div>
-);
-
 // Data
 const videoData = [
     {
         title: "Eligibility criteria",
         description: "Who’s eligible for a Loan Against Mutual Funds?",
-        image: "your-image-url",
-        videoUrl: "https://www.youtube.com/watch?v=8A3s9WP_7l4",
+        image: "./Eligibility_criteria.png",
+        videoUrl: "https://www.youtube.com/watch?v=rAqzpRZa78E",
     },
     {
         title: "Easy Monthly Installment",
@@ -116,20 +103,35 @@ const videoData = [
     },
 ];
 
+// Learn More Card Component
+const LearnMoreCard = ({ item }) => (
+    <div className="bg-white rounded-lg shadow-md overflow-hidden ">
+        <img src={item.image} alt={item.title} className="w-full h-40 object-cover" />
+        <div className="p-4">
+            <h3 className="font-semibold text-gray-800">{item.title}</h3>
+            <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 text-sm mt-2 block hover:underline">
+                Read more
+            </a>
+        </div>
+    </div>
+);
+
+
+
 const learnMoreData = [
     {
         title: "Understanding monthly installments on LAMF in 1 minute",
-        image: "Eligibility_criteria",
+        image: "./Eligibility_criteria.png",
         link: "#",
     },
     {
         title: "Is LAMF a better alternative than breaking investments?",
-        image: "your-image-url",
+        image: "./apply_in_4_easy_steps.png",
         link: "#",
     },
     {
         title: "FAQs: Loans Against Mutual Funds on Tickertape",
-        image: "your-image-url",
+        image: "./Eligibility_criteria.png",
         link: "#",
     },
 ];
